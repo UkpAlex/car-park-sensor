@@ -14,7 +14,7 @@ led_right_2 = Pin(25, Pin.OUT)
 
 sensor = HCSR04(trigger_pin=4, echo_pin=5, echo_timeout_us=20000)
 sensor_left = HCSR04(trigger_pin=12, echo_pin=14, echo_timeout_us=20000)
-sensor_right = HCSR04(trigger_pin=16, echo_pin=17, echo_timeout_us=20000)  
+sensor_right = HCSR04(trigger_pin=32, echo_pin=35, echo_timeout_us=20000)  
 
 i2c = SoftI2C(sda=Pin(21), scl=Pin(22))
 oled_width = 128
